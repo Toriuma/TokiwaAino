@@ -1,0 +1,294 @@
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2c2525;
+  /* ロード画面の背景色 */
+  z-index: 9999;
+}
+
+.loader-spinner {
+  border: 4px solid #f3f3f3;
+  /* スピナーの外枠の色 */
+  border-top: 4px solid #bd46a7;
+  /* スピナーの回転部分の色 */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+.loader-text {
+  margin-top: 16px;
+  font-size: 35px;
+  color: #da80de;
+  /* ロードテキストの色 */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+body {
+  background-color: #FFCCFF;
+  color: black;
+  width: auto;
+  overflow-x: hidden;
+  top: 0;
+  margin: 0;
+}
+
+input {
+  height: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.toc-002 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border: 2px solid #d0a7d3;
+  border-radius: 4px;
+}
+
+.toc-002 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 10px 0;
+  background-color: #FFBEDA;;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.toc-002 div::before {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 5px;
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M3.8%2017.2h-3c-.5%200-.8.4-.8.8v3c0%20.4.3.8.8.8h3c.4%200%20.8-.3.8-.8v-3c-.1-.4-.4-.8-.8-.8zm0-15h-3c-.5%200-.8.4-.8.8v3c0%20.4.3.8.8.8h3c.4%200%20.8-.3.8-.8V3c-.1-.4-.4-.8-.8-.8zm0%207.6h-3c-.5%200-.8.3-.8.7v3c0%20.4.3.8.8.8h3c.4%200%20.8-.3.8-.8v-3c-.1-.4-.4-.7-.8-.7zM23.2%2018h-15c-.4%200-.8.3-.8.8v1.5c0%20.4.3.8.8.8h15c.4%200%20.8-.3.8-.8v-1.5c0-.5-.3-.8-.8-.8zm0-15h-15c-.4%200-.7.3-.7.8v1.5c0%20.4.3.7.7.7h15c.5%200%20.8-.3.8-.8V3.8c0-.5-.3-.8-.8-.8zm0%207.5h-15c-.4%200-.8.3-.8.8v1.5c0%20.4.3.8.8.8h15c.4%200%20.8-.3.8-.8v-1.5c0-.5-.3-.8-.8-.8z%22%2F%3E%3C%2Fsvg%3E');
+  content: '';
+}
+
+.toc-002 ol {
+  list-style-type: decimal;
+  margin: 0;
+  overflow: hidden;
+}
+
+.toc-002 > ol {
+  padding: 1em 1em 1em 3em;
+}
+
+.toc-002 ol ol {
+  margin-top: 5px;
+  padding-left: 1.1em;
+}
+
+.toc-002 li {
+  padding: 5px 0;
+  font-weight: 600;
+}
+
+.toc-002 ol ol li {
+  font-weight: 500;
+  font-size: .9em;
+}
+
+.toc-002 a {
+  color: #333;
+  text-decoration: none;
+}
+
+
+.video-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.ytp-button {
+  width: 300px;
+}
+
+.youtube-video-button:hover {
+  background: #3498db;
+}
+
+.video-container.img {
+  cursor: pointer;
+  max-width: 500px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.video-container.img.img {
+  height: auto;
+  transition: transform .3s ease;
+  /* ゆっくり変化させる */
+}
+
+.video-container:hover img {
+  transform: scale(1.1);
+  /* 拡大 */
+}
+
+
+.fixed-icons {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+.fixed-icons img {
+  width: 55px;
+  height: 55px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+
+.iframe-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 600px;
+  /* 必要な幅に調整してください */
+  height: 338px;
+  /* 必要な高さに調整してください */
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.iframe-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.iframe-wrapper:hover {
+  transform: scale(1.2);
+  animation: hover 1s 1;
+}
+
+@keyframes hover {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+
+.fixed-image {
+  position: fixed;
+  top: 10px;
+  /* 画像の上側の余白 */
+  left: 10px;
+  /* 画像の左側の余白 */
+  z-index: 9999;
+  /* 画像の表示順序 */
+  cursor: pointer;
+  /* マウスカーソルをポインターに変更 */
+}
+
+h1 {
+  font-size: 40px;
+  /* すべての<h1>適切なサイズ*/
+}
+
+li {
+  font-size: 27px;
+  /* すべての<li>適切なサイズ */
+}
+
+
+.profile-image {
+  flex-grow: 0;
+  margin-right: 50px;
+  /* 服1の右側の余白 */
+}
+
+.profile-image img {
+  width: 300px;
+  height: auto;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.shorts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  /* 上部の余白を設定 */
+}
+
+
+
+justify-content:flex-end .list-menu {
+  margin-bottom: 50px;
+}
+
+
+#header {
+  background-color: #FFBEDA;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  /* float: left;によって<logo>要素と<list-menu>要素が横並びになる */
+  margin: 10px 0 0 30px;
+  float: left;
+}
+
+.logo img {
+  /* logoのサイズ */
+  width: 50px;
+}
+
+
+ul.list {
+  /* liのメニューを右に寄せる */
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  position: sticky;
+  margin: 4px;
+  top: 0;
+}
+
+li {
+  /* liの中の高さとか、間の調整 */
+  padding: 0 10px;
+  margin: 10px 0 0 0px;
+}
