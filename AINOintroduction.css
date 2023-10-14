@@ -170,7 +170,7 @@ a {
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 600px;
+  width: 100%;
   /* 必要な幅に調整してください */
   height: 338px;
   /* 必要な高さに調整してください */
