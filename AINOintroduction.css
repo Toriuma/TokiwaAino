@@ -177,10 +177,12 @@ a {
   /* 必要な高さに調整してください */
   margin: 0 auto;
   overflow: hidden;
+  transform: scale(1);
 }
 
 .iframe-wrapper iframe {
-  height: 100%;
+  height: unset;
+  aspect-ratio: 560 / 315;
 }
 
 
